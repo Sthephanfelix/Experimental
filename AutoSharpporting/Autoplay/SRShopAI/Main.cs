@@ -684,7 +684,7 @@ namespace AutoSharpporting.SRShopAI
         public static bool CanBuy = true;
         public static void Init()
         {
-            string itemJson = "https://raw.githubusercontent.com/myo/Experimental/master/item.json";
+            string itemJson = "https://raw.githubusercontent.com/sthephanfelix/Experimental/master/item.json";
             string itemsData = Request(itemJson);
             string itemArray = itemsData.Split(new[] { "data" }, StringSplitOptions.None)[1];
             MatchCollection itemIdArray = Regex.Matches(itemArray, "[\"]\\d*[\"][:][{].*?(?=},\"\\d)");
